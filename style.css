@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+:root{
+    --mainColorBH : #003D5C;
+    --mainColorO : #FFAF32;
+    --mainColorOH : #FFD581;
+    --mainColorB : #082737;
+    --mainTransition : 0.3s ease-in-out ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mainColorB);
+    padding: 10px 40px;
+}
+
+header .social-media-icons ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+header .social-media-icons ul .insta .coloréi{
+    display: inline;
+    background-image: url(../assets/insta.svg);
+}
+
+header .social-media-icons ul .insta .noncoloréi{
+    display: none;
+}
+
+header .social-media-icons ul .insta:hover .coloréi{
+    display: none;
+}
+
+header .social-media-icons ul .insta:hover .noncoloréi{
+    display: inline;
+    background-image: url(../assets/insta1.svg);
+}
+
+header .social-media-icons ul .insta .noncoloré{
+    display: none;
+    }
+
+header .social-media-icons ul .face .coloréf{
+    display: inline;
+    background-image: url(../assets/face.svg);
+}
+
+header .social-media-icons ul .face .noncoloréf{
+    display: none;
+}
+
+header .social-media-icons ul .face:hover .coloréf{
+    display: none
+}
+
+header .social-media-icons ul .face:hover .noncoloréf{
+    display: inline;
+    background-image: url(../assets/face1.svg);
+}
+
+header .social-media-icons ul .yout .coloréy{
+    display: inline;
+    background-image: url(../assets/yout.svg);
+}
+
+header .social-media-icons ul .yout .noncoloréy{
+    display: none;
+}
+
+header .social-media-icons ul .yout:hover .coloréy{
+    display: none
+}
+
+header .social-media-icons ul .yout:hover .noncoloréy{
+    display: inline;
+    background-image: url(../assets/yout1.svg);
+}
+
+header .social-media-icons ul .whats .coloréw{
+    display: inline;
+    background-image: url(../assets/whats.svg);
+}
+
+header .social-media-icons ul .whats .noncoloréw{
+    display: none;
+} 
+
+header .social-media-icons ul .whats:hover .coloréw{
+    display: none;
+} 
+
+header .social-media-icons ul .whats:hover .noncoloréw{
+    display: inline;
+    background-image: url(../assets/whats1.svg);
+}
+
+
+header .social-media-icons ul li:hover{
+    scale: 1.5;
+    transition: var(--mainTransition);
+}
+
+header .phrase-d-entete{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+header .phrase-d-entete h4,a{
+font-size: 13px;
+}
+
+header .phrase-d-entete a{
+    transition: var(--mainTransition);
+}
+
+header .phrase-d-entete a:hover{
+    scale: 1.5;
+}
+
+header .phrase-d-entete .ph-entet{
+    display: flex;
+    gap: 5px;
+}
+
+header .phrase-d-entete .ph-entet a{
+    color: var(--mainColorO);
+}
+
+header .phrase-d-entete .ph-entet a:hover{
+    scale: 1;
+}
+
+header .langue-device{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+header .langue-device div span{
+    cursor: pointer;
+}
+header .langue-device .langue{
+    text-transform: capitalize;
+}
+
+header .langue-device .device{
+    text-transform: uppercase;
+}
+
+header .langue-device .langue{
+    display: flex;
+    align-items: center;
+    
+}
+
+header .langue-device .device{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+nav .logo a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav .logo a span{
+    font-family: Bagel Fat One;
+}
+
+nav .logo span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #082737;
+}
+
+nav .icon-compte li:hover{
+    scale: 1.5;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+nav .icon-compte li{
+    transition: var(--mainTransition);
+}
+
+nav ul .home{
+
+    transition: var(--mainTransition);
+}
+
+nav ul .home a{
+    color: var(--mainColorO);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul .home:hover{
+    scale: 1.2;
+}
+
+
+nav ul .pack-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hero-section{
+    background-image: url(../assets/hero-section.jpg);
+   height : 705px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section span,h2{
+    color: white;
+}
+
+.hero-section span{
+    font-family:sans-serif;
+    font-size: 25px;
+}
+
+.hero-section h2{
+    color: white;
+    font-family: Bagel Fat One;
+    max-width: 500px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .btn-hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hero-section .btn-hero-section button{
+    width: 158px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.hero-section .btn-hero-section .shopnow{
+    color: white;
+    background-color: var(--mainColorB);
+}
+
+.hero-section .btn-hero-section .descover{
+    background-color: var(--mainColorO);
+}
+
+.hero-section .btn-hero-section .shopnow:hover{
+    background-color: var(--mainColorBH);
+}
+
+.hero-section .btn-hero-section .descover:hover{
+    background-color: var(--mainColorOH);
+}
+
+.hero-section .pagination ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    padding-top: 50px;
+}
+
