@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+:root{
+    --mainColorBH : #003D5C;
+    --mainColorO : #FFAF32;
+    --mainColorOH : #FFD581;
+    --mainColorB : #082737;
+    --mainTransition : 0.3s ease-in-out ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mainColorB);
+    padding: 10px 40px;
+}
+
+header .social-media-icons ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+header .social-media-icons ul .insta .coloréi{
+    display: inline;
+    background-image: url(../assets/insta.svg);
+}
+
+header .social-media-icons ul .insta .noncoloréi{
+    display: none;
+}
+
+header .social-media-icons ul .insta:hover .coloréi{
+    display: none;
+}
+
+header .social-media-icons ul .insta:hover .noncoloréi{
+    display: inline;
+    background-image: url(../assets/insta1.svg);
+}
+
+header .social-media-icons ul .insta .noncoloré{
+    display: none;
+    }
+
+header .social-media-icons ul .face .coloréf{
+    display: inline;
+    background-image: url(../assets/face.svg);
+}
+
+header .social-media-icons ul .face .noncoloréf{
+    display: none;
+}
+
+header .social-media-icons ul .face:hover .coloréf{
+    display: none
+}
+
+header .social-media-icons ul .face:hover .noncoloréf{
+    display: inline;
+    background-image: url(../assets/face1.svg);
+}
+
+header .social-media-icons ul .yout .coloréy{
+    display: inline;
+    background-image: url(../assets/yout.svg);
+}
+
+header .social-media-icons ul .yout .noncoloréy{
+    display: none;
+}
+
+header .social-media-icons ul .yout:hover .coloréy{
+    display: none
+}
+
+header .social-media-icons ul .yout:hover .noncoloréy{
+    display: inline;
+    background-image: url(../assets/yout1.svg);
+}
+
+header .social-media-icons ul .whats .coloréw{
+    display: inline;
+    background-image: url(../assets/whats.svg);
+}
+
+header .social-media-icons ul .whats .noncoloréw{
+    display: none;
+} 
+
+header .social-media-icons ul .whats:hover .coloréw{
+    display: none;
+} 
+
+header .social-media-icons ul .whats:hover .noncoloréw{
+    display: inline;
+    background-image: url(../assets/whats1.svg);
+}
+
+
+header .social-media-icons ul li:hover{
+    scale: 1.5;
+    transition: var(--mainTransition);
+}
+
+header .phrase-d-entete{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+header .phrase-d-entete h4,a{
+font-size: 13px;
+}
+
+header .phrase-d-entete a{
+    transition: var(--mainTransition);
+}
+
+header .phrase-d-entete a:hover{
+    scale: 1.5;
+}
+
+header .phrase-d-entete .ph-entet{
+    display: flex;
+    gap: 5px;
+}
+
+header .phrase-d-entete .ph-entet a{
+    color: var(--mainColorO);
+}
+
+header .phrase-d-entete .ph-entet a:hover{
+    scale: 1;
+}
+
+header .langue-device{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+header .langue-device div span{
+    cursor: pointer;
+}
+header .langue-device .langue{
+    text-transform: capitalize;
+}
+
+header .langue-device .device{
+    text-transform: uppercase;
+}
+
+header .langue-device .langue{
+    display: flex;
+    align-items: center;
+    
+}
+
+header .langue-device .device{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    gap: 5px;
+}
+
+nav .logo a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+nav .logo a span{
+    font-family: Bagel Fat One;
+}
+
+nav .logo span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #082737;
+}
+
+nav .icon-compte li:hover{
+    scale: 1.5;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+nav .icon-compte li{
+    transition: var(--mainTransition);
+}
+
+nav ul .home{
+
+    transition: var(--mainTransition);
+}
+
+nav ul .home a{
+    color: var(--mainColorO);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul .home:hover{
+    scale: 1.2;
+}
+
+
+nav ul .pack-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hero-section{
+    background-image: url(../assets/hero-section.jpg);
+   height : 705px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section span,h2{
+    color: white;
+}
+
+.hero-section span{
+    font-family:sans-serif;
+    font-size: 25px;
+}
+
+.hero-section h2{
+    color: white;
+    font-family: Bagel Fat One;
+    max-width: 500px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .btn-hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hero-section .btn-hero-section button{
+    width: 158px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--mainTransition);
+}
+
+.hero-section .btn-hero-section .shopnow{
+    color: white;
+    background-color: var(--mainColorB);
+}
+
+.hero-section .btn-hero-section .descover{
+    background-color: var(--mainColorO);
+}
+
+.hero-section .btn-hero-section .shopnow:hover{
+    background-color: var(--mainColorBH);
+}
+
+.hero-section .btn-hero-section .descover:hover{
+    background-color: var(--mainColorOH);
+}
+
+.hero-section .pagination ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.span-h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.span-h2 span{
+    color: var(--mainColorO);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.span-h2 h2{
+    font-family: Bagel Fat One;
+    color: #082737;
+    font-size: 50px;
+}
+
+.span-h2 .h2-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.span-h2 .h2-img{
+    align-items: start;
+}
+
+.tuto-list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.list-categorie span{
+    color: white;
+    font-family: sans-serif;
+}
+
+.list-categorie{
+    background-image: url(../assets/chat.jpg);
+    width: 210px;
+    height: 201px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.list-categorie h2{
+    font-family: Bagel Fat One;
+}
+
+.best-span-h2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+}
+
+.best-span-h2 span{
+    color: var(--mainColorO);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.best-span-h2 h2{
+    font-family: Bagel Fat One;
+    color: #082737;
+    font-size: 50px;
+}
+
+.best-span-h2 .h2-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.best-span-h2 .h2-img{
+    align-items: start;
+}
+
+.tuto-best{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.best-selling-products{
+    display: flex;
+    gap: 5px;  
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.best-selling-products img{
+    width: 130px;
+}
+
+.best-selling-products .infos-best-selling .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.best-selling-products .infos-best-selling{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best-selling-products .infos-best-selling .infos .txt{
+    color: black;
+    text-transform: capitalize;
+   font-family: sans-serif;
+
+}
+
+.best-selling-products .infos-best-selling .infos .prix{
+    color:#6EC4E7;
+   font-family: sans-serif;
+}
+
+.best-selling-products .infos-best-selling .etoiles{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.best-selling-products .infos-best-selling .etoiles span{
+    font-family: sans-serif;
+}
+
+.tuto-best-selling{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px;
+}
+
+.flech img{
+    cursor: pointer;
+}
+
+.latest{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.latest1{
+    background-image: url(../assets/latest1.jpg);
+    width: 653px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.latest .latest1 span{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.latest .latest2 h3{
+   color: white;
+    font-family: Bagel Fat One;
+    max-width: 250px;
+    font-size: 25px;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.latest .latest2 span{
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.latest .latest1 h3{
+   color: white;
+    font-family: Bagel Fat One;
+    max-width: 250px;
+    font-size: 25px;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.latest2{
+    background-image: url(../assets/latest1.jpg);
+    width: 653px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.latest .latest1 button{
+    width: 158px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    background-color: var(--mainColorB);
+    color: white;
+    font-size: 15px;
+}
+
+.latest .latest1 button:hover{
+    background-color: var(--mainColorBH);
+}
+
+
+.latest .latest2 button{
+    width: 158px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--mainTransition);
+    background-color: var(--mainColorB);
+    color: white;
+    font-size: 15px;
+}
+
+.latest .latest2 button:hover{
+    background-color: var(--mainColorBH);
+}
+
+
+.latest-title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+}
+
+.latest-title span{
+    color: var(--mainColorO);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.latest-title h2{
+    font-family: Bagel Fat One;
+    color: #082737;
+    font-size: 50px;
+    max-width: 600px;
+}
+
+.latest-title .latest-h2-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.latest-title .latest-h2-img{
+    align-items: start;
+}
+
+.tuto-latest{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
